@@ -1,0 +1,4 @@
+In C#
+1. Everything is a project. we need .csproj file and Program.cs file to run he code.
+2. Program.cs file is the first executable file.
+
