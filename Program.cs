@@ -33,6 +33,7 @@ namespace MainCode
             //cl_inst_loops.for_loop();
             //cl_inst_loops.m_foreach();
             //cl_inst_loops.switch_condi();
+            cl_inst_loops.m_try_catch();
 
             //Lesson 2.1 operators
             diff_operators.many_operators oprs=new many_operators();
@@ -48,7 +49,7 @@ namespace MainCode
             //cl_inst_ds.m4_list_cls_objs();
 
             //Lesson 4: Methods and Functions            
-            diff_methods.method_types inst_method = new method_types(); // this class has constructors
+            //diff_methods.method_types inst_method = new method_types(); // this class has constructors
             //diff_methods.method_types inst_method2 = new method_types("parameters"); // this class has constructors that takes parameters.
             //inst_method.m1_access_speci_method(); //public
             //inst_method.m2_generic_method(); // private, unable to call private method

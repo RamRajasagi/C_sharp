@@ -15,11 +15,18 @@ namespace loopsandconi
             int Age = Convert.ToInt32(Console.ReadLine());
 
             if(Age<0){
-                throw new Exception("Age cannot be negative"); // throwing an exoection will kill thye run of the program
+                throw new Exception("Age cannot be negative"); // throwing an exoection will kill the run of the program
             }
 
             Console.Write("Enter MOB:");
             var Month = Console.ReadLine();
+
+            Console.WriteLine("Are you married?(y)");
+            var check=Console.ReadLine();
+            Boolean m_check=true;
+            if(check !="y"){
+                m_check=false;
+            }
 
             Console.WriteLine("Name is:" + Name + " Age:" + Age + " MOB:" + Month);
 
@@ -34,7 +41,14 @@ namespace loopsandconi
             else
             {
                 Console.WriteLine("Unknown Star");
+            }            
+
+            if(m_check){//in here we only have only parameter as all these loops work as loo=ng as they are true. that means if the value is true it is going work as seen here.
+                Console.WriteLine("You are married.");
+
             }
+
+            
         }
 
         public void m_while_loop()
@@ -102,6 +116,23 @@ namespace loopsandconi
                 break;
             }
 
+        }
+
+        public void m_try_catch(){
+            var l_check=true;
+            while(l_check){
+            try{                
+                Console.WriteLine("enter a number");
+                int s=Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("{0} is a number",s);// these two lines doesnt run unless you enter a number as the above line throws an expection
+                break;
+            }
+            catch{//catch by default cahtchs all execptions you can also have catch statmnets that catchs 
+                Console.WriteLine("you dint enter a number");
+
+            }
+            }
+        
         }
         
     }
