@@ -16,6 +16,8 @@ namespace DIfferent_IOs{
             //working with two or more ints.
             Console.WriteLine("Hello this is + output style: "+wls+" and this way we can add 2nd var: "+i);
             Console.WriteLine("Hello this is string format operation style: {0} and this way we can add 2nd var {1}", wls,i);
+            //string interpolation
+            System.Console.WriteLine($"Hello this is string interpolation style: {wls} and this way we can add 2nd var {i}");
         }       
 
     }   
