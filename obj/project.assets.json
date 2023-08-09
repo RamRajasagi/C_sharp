@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C_sharp\\C_sharp.csproj",
+      "projectUniqueName": "D:\\C_shrap\\C_sharp.csproj",
       "projectName": "C_sharp",
-      "projectPath": "D:\\C_sharp\\C_sharp.csproj",
+      "projectPath": "D:\\C_shrap\\C_sharp.csproj",
       "packagesPath": "C:\\Users\\ramra\\.nuget\\packages\\",
-      "outputPath": "D:\\C_sharp\\obj\\",
+      "outputPath": "D:\\C_shrap\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ramra\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.121\\RuntimeIdentifierGraph.json"
       }
     }
   }
