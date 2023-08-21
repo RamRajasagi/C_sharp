@@ -1,6 +1,7 @@
 ﻿// In C# the complier always looks for Main Method to start the compiling from 
 //and  Program.cs is a default csharp file with that method. other classes can be called from this method.
 //These are different libs and namespaces that we import for a code to run successfully
+// In C# everything is case sensitive.
 using System;  // this is  default Lib
 using DIfferent_IOs; // User defined Namesame
 using loopsandconi;
@@ -13,22 +14,31 @@ using ed;
 
 
 namespace MainCode 
-//Namespace is like Last Name for person. It helps in making the class name below unique.
-// In Ram Rajasagi Ram is like class name and Rajasagi is like namespace.
+//Namespace is a collection of different things like other namespaces, classes, methods, etc. 
+// like Last Name for person. there can be many types and kinds of items declared in a namespace (ram rajasagi, yeti rajasagi etc).
+// we call in a snamespacve to import classes from other places like using System; System is a namespace | Console is a class | WriteLine is a method
 {
-    class MainClass //Class name
+    class MainClass //Class name. Any code that we write should be in a class.
     {
-        static void Main(string[] args) // Code runs first from this method
+        static void Main(string[] args) 
+        // Code runs first from this method. in c# methods and functions are almost same with methods having void return type and functions have a value return type
+        // (string[] args) -> this is parameter declaration
+        // unless you call other methods into Main method they will not be executed. a program starts and ends in Main method only.
         {
             // Rough page:
-
+            /*
+             Console.WriteLine("Enter Name:");
+             Console.WriteLine("Enter Name2:");
+            string Name=Console.ReadLine();
+            Console.WriteLine("Name:"+Name);
+            */
 
             //Lesson 1: simple input and output from console.
             DIfferent_IOs.IO_Test Cl_inst_IO_Test = new IO_Test(); //Creating a class instance to access the methods and variables with in the class and the new instace "Cl_inst_IO_Test" is called an object.
-            //Cl_inst_IO_Test.SimpleIO(); //calling a method
+            Cl_inst_IO_Test.SimpleIO(); //calling a method;
             //Cl_inst_IO_Test.Diff_WLs(); //calling a method
             
-
+/*
             //Lesson 2: Loops.
             loopsandconi.diff_loops cl_inst_loops = new diff_loops();
             //cl_inst_loops.m_if_loop();
@@ -88,7 +98,7 @@ namespace MainCode
            // del_class.assign_delg_method();
             ed.lambda_exp lamb= new lambda_exp();
 
-            
+*/            
 
         }
     }
