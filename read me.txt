@@ -1,3 +1,8 @@
 Good C# resources:
 https://www.tutlane.com/tutorial/csharp/csharp-methods-functions-with-examples
 https://www.youtube.com/watch?v=SXmVym6L8dw&list=PLAC325451207E3105&ab_channel=kudvenkat
+
+lessons in this project
+main: program.cs
+1. IO_from_cnsl.cs
+2. 

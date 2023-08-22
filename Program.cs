@@ -11,6 +11,7 @@ using diff_methods;
 using diff_operators;
 using oops_concepts;
 using ed;
+using datatypes;
 
 
 namespace MainCode 
@@ -34,9 +35,14 @@ namespace MainCode
             */
 
             //Lesson 1: simple input and output from console.
-            DIfferent_IOs.IO_Test Cl_inst_IO_Test = new IO_Test(); //Creating a class instance to access the methods and variables with in the class and the new instace "Cl_inst_IO_Test" is called an object.
-            Cl_inst_IO_Test.SimpleIO(); //calling a method;
+            //DIfferent_IOs.IO_Test Cl_inst_IO_Test = new IO_Test(); //Creating a class instance to access the methods and variables with in the class and the new instace "Cl_inst_IO_Test" is called an object.
+            //Cl_inst_IO_Test.SimpleIO(); //calling a method;
             //Cl_inst_IO_Test.Diff_WLs(); //calling a method
+
+            // Lesson 1.1: data types 1. Boolean
+            //datatypes.dtype diff_dtype = new dtype();
+            //diff_dtype.m1();
+
             
 /*
             //Lesson 2: Loops.
