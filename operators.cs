@@ -1,31 +1,26 @@
 /*
     Overview
-    Arithmetic operators
-    Boolean logical operators
-    Bitwise and shift operators
-    Equality operators
-    Comparison operators
-    Member access operators and expressions
-    Type-testing operators and cast expression
-    User-defined conversion operators
-    Pointer-related operators
-    Assignment operators
-    Lambda expressions
-    Patterns
-    + and += operators
-    - and -= operators
+    Arithmetic operators: +,-,*,/,%
+    Boolean logical operators: (AND) &&, (OR) ||, (Not) !, 
+    Bitwise and shift operators (Ignore)
+    Equality operators and  Comparison operators: ==,!=,<,>,
+    Member access operators and expressions: . , ->
+    Type-testing operators and cast expression: is, as, typeof, gettype
+    User-defined conversion operators 
+    Pointer-related operators &, *, ++, --, fixed 
+    Assignment operators: =, +=, -=, *=, etc
+    Lambda expressions: Parameter List, Operator(=>), Body
+    Patterns: Type(is), Property(when), Tuple, switch statment and pattern, 
+    is operator  
     
-    ! (null-forgiving) operator
-    ?? and ??= operators
-    => operator
-    :: operator
+    null-coalescing ?? and ??= operators and default value expressions
+    
+    qualifier :: operator
     await operator
-    default value expressions
-    delegate operator
-    is operator
+    
     nameof expression
-    new operator
-    sizeof operator
+    
+    
     stackalloc expression
     switch expression
     true and false operators
