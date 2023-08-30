@@ -6,3 +6,8 @@ lessons in this project
 main: program.cs
 1. IO_from_cnsl.cs
 2. datatypes.cs
+3. operators.cs
+4. getset.cs
+5.data_structures.cs
+6. loops_and_coni.cs
+7. methods.cs

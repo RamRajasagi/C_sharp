@@ -1,11 +1,12 @@
 using System;
 
+// arrays (static, dynamic) , list, hash tables
 namespace ds{
     class diff_ds{
         public void m1_arrays_static(){
-            //var Array[];    //declaring array
+            //int Array[];    //declaring array
             //Array = new int[20];  // allocating memory to array
-            var studentGrades = new int[10]; // creating an array and aloocating memory to it in the same line.
+            int[] studentGrades = new int[10]; // creating an array and aloocating memory to it in the same line.
             studentGrades[1]=20; //using index to access the the array and saveing our data in it. 
             studentGrades[5]=50;
             Console.WriteLine(studentGrades[5]); //we use an index too get specific vaule of an array.
@@ -18,8 +19,8 @@ namespace ds{
             Console.Write("Enter Number of students:");
             int stu_count= Convert.ToInt32(Console.ReadLine());
             
-            var stu_name = new string[stu_count];
-            var stu_grade= new int[stu_count];
+            string[] stu_name = new string[stu_count];
+            int[] stu_grade= new int[stu_count];
             
             for(int i=0;i<stu_count;i++){
                 Console.Write("Enter Student Name:");
@@ -37,8 +38,9 @@ namespace ds{
         }
 
         public void m3_list(){
-            var stu_name = new List<string>(); //creating a list
-            var stu_grade= new List<int>();
+            // similler to arrays with index based access but their size can be changed at run time unlike array where size is fixed
+            List<string> stu_name = new List<string>(); //creating a list. here no need to declare size as list can grow as you like
+            List<int> stu_grade= new List<int>();
 
             string onemore="y";
 
@@ -58,10 +60,42 @@ namespace ds{
             }
         }
 
+        /* differnt methods inside a list
+         List<String> food = new List<String>();
+
+            food.Add("pizza");
+            food.Add("hamburger");
+            food.Add("hotdog");
+            food.Add("fries");
+
+            //Console.WriteLine(food[0]);
+            //Console.WriteLine(food[1]);
+            //Console.WriteLine(food[2]);
+            //Console.WriteLine(food[3]);
+
+            //food.Remove("fries");
+            //food.Insert(0, "sushi");
+            //Console.WriteLine(food.Count);
+            //Console.WriteLine(food.IndexOf("pizza"));
+            //Console.WriteLine(food.LastIndexOf("fries"));
+            //Console.WriteLine(food.Contains("pizza"));
+            //food.Sort();
+            //food.Reverse();
+            //food.Clear();
+            //String[] foodArray = food.ToArray();
+
+            foreach (String item in food)
+            {
+                Console.WriteLine(item);
+            }
+
+            
+        */
+
         public void m4_list_cls_objs(){
             //example of lists handling class objects i.e a set of data rather than one vaule per index.
-            var list_student = new List<Student>(); // creating a list that takes all the variables that are declared in class Student in one index place
-
+            List<Student> list_student = new List<Student>(); // creating a list that takes all the variables that are declared in class Student in one index place
+            // Student class is declared below
             string onemore="y";
 
             while(onemore =="y"){
@@ -121,7 +155,7 @@ namespace ds{
             return stu_gender;
         }
 
-        public int S_rank{ //this is called property. we can you when the language supports set and get accessers and both are sepcifed in the same properity
+        public int S_rank{ //this is called property. we can use this when the language supports set and get accessers and both are sepcifed in the same properity
             set{
                 stu_rank=value; //here value is a keyword with has the value of S_rank property
                 }
