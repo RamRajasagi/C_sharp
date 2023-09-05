@@ -19,6 +19,8 @@ class cycle : abs_cls_cycle // when you inherit an abs class we "MAY" need to im
 
 public abstract class train : abs_cls_cycle // and if we choose not to implement it then we should have the the inherited class as abstrct as well
 { // but an abstract class can have decleration and define of its own objects
+
+private int train_no=5;// abstrac t classes can have fields.
     public override void cycle_tyres() { }
     public void trains()
     {
