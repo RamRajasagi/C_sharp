@@ -4,9 +4,9 @@ using System;
 namespace ds{
     class diff_ds{
         public void m1_arrays_static(){
-            //int Array[];    //declaring array
-            //Array = new int[20];  // allocating memory to array
+            //int Array[]; declaring array  //Array = new int[20]; allocating memory to array
             int[] studentGrades = new int[10]; // creating an array and aloocating memory to it in the same line.
+            // we can also create aan arry of classes like diff_ds[] d= new diff_ds[5], this will hold five instace of this class
             studentGrades[1]=20; //using index to access the the array and saveing our data in it. 
             studentGrades[5]=50;
             Console.WriteLine(studentGrades[5]); //we use an index too get specific vaule of an array.

@@ -13,6 +13,9 @@ using oops_concepts;
 using ed;
 using datatypes;
 using getset;
+using cvs;
+using inter;
+using abs_class;
 
 /// <summary>
 /// this is the main code run area
@@ -23,6 +26,7 @@ namespace MainCode
 // we call in a snamespacve to import classes from other places like using System; System is a namespace | Console is a class | WriteLine is a method
 {
     class MainClass //Class name. Any code that we write should be in a class.
+    // a class can only have instance variables, constructors and methods.
     {
         static void Main(string[] args)
         // Code runs first from this method. in c# methods and functions are almost same with methods having void return type and functions have a value return type
@@ -38,7 +42,9 @@ namespace MainCode
             */
 
             //Lesson 1: simple input and output from console.
-            //DIfferent_IOs.IO_Test Cl_inst_IO_Test = new IO_Test(); //Creating a class instance to access the methods and variables with in the class and the new instace "Cl_inst_IO_Test" is called an object.
+            //DIfferent_IOs.IO_Test Cl_inst_IO_Test = new IO_Test(); //Creating a class instance to access the methods and variables 
+            //with in the class and the new instace "Cl_inst_IO_Test" is called an object.
+            //the IO_Test() is a default constructor; 
             //Cl_inst_IO_Test.SimpleIO(); //calling a method;
             //Cl_inst_IO_Test.Diff_WLs(); //fi a method has static in the decleration we dot neet instance like "Cl_inst_IO_Test" we can directly call "IO_Test.Diff_WLs();"
 
@@ -58,6 +64,8 @@ namespace MainCode
             //getset.gs gs_et = new gs();
             //int i = gs_et.charging(10);
             //Console.WriteLine($"new charge is {i}");
+            //getset.gs2 gs_et2 = new gs2();
+            //gs_et2.buy_eggs();
 
             //Lesson 5: Data Structures.
             //ds.diff_ds cl_inst_ds = new diff_ds();
@@ -76,8 +84,8 @@ namespace MainCode
             //cl_inst_loops.m_dowhile_loop();
             //cl_inst_loops.m_try_catch();
 
-            //Lesson 4: Methods and Functions            
-            diff_methods.method_types inst_method = new method_types(); // this class has constructors
+            //Lesson 7: Methods and Functions            
+            //diff_methods.method_types inst_method = new method_types(); // this class has constructors
             //diff_methods.method_types inst_method2 = new method_types("parameters"); // this class has constructors that takes parameters.
             //inst_method.m1_access_speci_method(); //public
             //inst_method.m2_generic_method(); // private, unable to call private method
@@ -102,23 +110,64 @@ namespace MainCode
             //inst_method.out_method(out l); //exmple of using out refence
             //Console.WriteLine(l);
             //inst_method.print_this();
+            //inst_method.m12_add(5,3);
+
+            //Lesson 8 oops concepts
+            //oops_concepts.encap new_encap = new encap();
+            //new_encap.i=2;
+            //var k=new_encap.multi();
+            //Console.WriteLine(k);
+            //oops_concepts.inhert_parent new_p = new inhert_parent(); // creating parent instance
+            //var k=new_p.add(); //calling a function in parent method 
+            //Console.WriteLine(k);
+            //oops_concepts.inhert_child new_c = new inhert_child(); // creating child class instance, this has a cunstrut, 
+            //though we run just this child class creation it will run partent class and its cunstructs before child class. 
+            //k=new_c.add();// calling parent class method, so though we have a i varibale in child class it is still using the i value for parent class
+            //Console.WriteLine(k);
+            //var k=new_c.add2();// calling a child class method.
+            //Console.WriteLine(k);
+            //oops_concepts.inhert_parent new_c1 = new inhert_child(); // in this way you can access the hidden parent class method.  parent class instance calling child class 
+            //var v1=new_c1.add2(); //though we are using the instance of child class and its object we are calling parent class ref variable new_c1,
+            //Console.WriteLine(" so we get {0} insted of sum",v1);
+            //oops_concepts.poly p = new oops_concepts.poly();
+            //var pv = p.poly_add(3, 2);
+            //var pv2 = p.poly_add(2, 3, 4);
+            //Console.WriteLine($"with 2 varibales one method is called for sum of {pv} and with 3 variables it is {pv2}");
+            //oops_concepts.poly_Circle PC = new oops_concepts.poly_Circle();
+            //PC.Draw();
+
+            //Lesson 9 class_v_struct            
+            //var personClass = new PersonClass("Alice", 30); // instance of the class
+            //var personStruct = new PersonStruct("Bob", 25); // instance of the struct
+
+            //var personClassCopy = personClass; // this Copys by reference of the class above
+            //personClass.Name = "Alice Johnson"; // Modifying  name property
+            //personClass.PrintDetails(); // Outputs: Name: Alice Johnson, Age: 30
+            //personClassCopy.PrintDetails(); // Outputs: Name: Alice Johnson, Age: 30 (same as original)
+
+            //var personStructCopy = personStruct; // this Copys by value of the struct above
+            //personStruct.Name = "Bob Smith"; // Modifying name property
+            //personStruct.PrintDetails(); // Outputs: Name: Bob Smith, Age: 25
+            //personStructCopy.PrintDetails(); // Outputs: Name: Bob, Age: 25 (original remains unchanged)
+
+            //Lesson 10 interfaces
+            //inter.Jeep jeep = new inter.Jeep();
+            //jeep.jeep_runs();
+
+            //Lesson 11 Abstract Classes
+            abs_class.cycle c = new cycle();
+            c.cycle_tyres();
+            abs_class.train_station tn = new train_station();
+            tn.cycle_tyres();
+            tn.trains();
+
+            
+
 
 
 
             /*
-                        //Lesson 5 oops concepts
-                        oops_concepts.encap new_encap=new encap();
-                        //new_encap.i=2;
-                        //var k=new_encap.multi();
-                        //Console.WriteLine(k);
-                        oops_concepts.inhert_parent new_p= new inhert_parent();
-                        //k=new_p.add();
-                        //Console.WriteLine(k);
-                        oops_concepts.inhert_child new_c= new inhert_child();
-                        //k=new_c.add();
-                        //Console.WriteLine(k);
-                        //k=new_c.add2();
-                        //Console.WriteLine(k);
+                        
 
                         //Lesson 6: Events and delegates
                         ed.action_here act_here = new action_here(); // instan publisher class

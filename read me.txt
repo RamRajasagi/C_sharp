@@ -11,3 +11,6 @@ main: program.cs
 5.data_structures.cs
 6. loops_and_coni.cs
 7. methods.cs
+8. oops4concepts.cs
+9.class_v_struct.cs
+10. interface.cs

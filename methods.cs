@@ -107,6 +107,9 @@ namespace diff_methods
             j=100;
         }
 
+        //expression-bodied member syntax.
+         public int m12_add(int a, int b) => a + b; //  is an example of a concise method declaration using lambda expressions for short methods.
+
         public void m10_out_parm(int x1, int x2, out int y1, out int y2){ // out paramerts is a way of sending out the data from the method through these parameters. similler to return. 
             y1=x1+x2;// these out paramerts can be used, if we want send out more than one output from a method.
             y2=x1*x2;
