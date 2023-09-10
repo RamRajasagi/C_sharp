@@ -58,9 +58,9 @@ namespace oops_concepts
             return h;
         }
 
-        public inhert_child() : base(300)
+        public inhert_child() : base(300) // it will call the constructor of parent first (using : base()), and then it will execute its own constructor code.
         {
-            Console.WriteLine($"we sent 300 to parent class");
+            Console.WriteLine($"we sent 300 to parent class"); 
         }
 
     }

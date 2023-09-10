@@ -17,6 +17,7 @@ using cvs;
 using inter;
 using abs_class;
 using del_gate;
+using exc_hand;
 
 /// <summary>
 /// this is the main code run area
@@ -141,12 +142,10 @@ namespace MainCode
             //Lesson 9 class_v_struct            
             //var personClass = new PersonClass("Alice", 30); // instance of the class
             //var personStruct = new PersonStruct("Bob", 25); // instance of the struct
-
             //var personClassCopy = personClass; // this Copys by reference of the class above
             //personClass.Name = "Alice Johnson"; // Modifying  name property
             //personClass.PrintDetails(); // Outputs: Name: Alice Johnson, Age: 30
             //personClassCopy.PrintDetails(); // Outputs: Name: Alice Johnson, Age: 30 (same as original)
-
             //var personStructCopy = personStruct; // this Copys by value of the struct above
             //personStruct.Name = "Bob Smith"; // Modifying name property
             //personStruct.PrintDetails(); // Outputs: Name: Bob Smith, Age: 25
@@ -164,50 +163,26 @@ namespace MainCode
             //tn.trains();
 
             //Lesson 12 Delegates.
-            del_gate.dels d = new dels(); //class instance
-            dels.del1_1input del_d1 = new dels.del1_1input(d.car_names); // delegate intance
-            del_d1("Benz");
-            //multicast delegates
-            /*
-            dels.del1_1input del_d2,del_d3,del_d4;
-            del_d2=new dels.del1_1input(d.car_2nd_choice);
-            del_d3=new dels.del1_1input(d.car_3rd_choice);
-            del_d4=new dels.del1_1input(d.car_no_choice);  
+            // del_gate.dels d = new dels(); //class instance
+            // dels.del1_1input del_d1 = new dels.del1_1input(d.car_names); // delegate intance
+            // del_d1("Benz");
+            // //multicast delegates is a process of combining similler signatured delegates i.e methods as well.
+            // dels.del_sample d2,d3, d4,d5; // the above delegate doesnt work with these as they have different signatures. 
+            // d2= new dels.del_sample(d.car_2nd_choice);  
+            // d3= new dels.del_sample(d.car_3rd_choice);  
+            // d4= new dels.del_sample(d.car_no_choice);          
+            // d5=d2+d3+d4;
+            // d5();
 
-            del_d2("BMW"); //+ del_d3("Audi") +  del_d4("GEO");
+            // Lesson 13: Exception handling
+            //exc_hand.ex_handle eh = new exc_hand.ex_handle();
+            //eh.reading();
+            //eh.writing();
 
-            */          
-            dels.del_sample d2,d3, d4,d5;
-            d2= new dels.del_sample(d.car_2nd_choice);  
-            d3= new dels.del_sample(d.car_3rd_choice);  
-            d4= new dels.del_sample(d.car_no_choice);          
-            d5=d2+d3+d4;
-            d5();
-
+            // Lesson 14: Enums
+            
 
 
-
-
-
-
-
-
-
-
-
-
-            /*
-                        
-
-                        //Lesson 6: Events and delegates
-                        ed.action_here act_here = new action_here(); // instan publisher class
-                        ed.reaction react = new reaction(act_here); //insta subscriber class and calling them with the publisher
-                        //act_here.main_action();
-                        ed.delegatez del_class= new delegatez();
-                       // del_class.assign_delg_method();
-                        ed.lambda_exp lamb= new lambda_exp();
-
-            */
 
         }
     }

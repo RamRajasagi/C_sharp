@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\rrajasagi\\Documents\\GITHUB\\Personal\\C_sharp\\C_sharp.csproj": {}
+    "C:\\Users\\rrajasagi\\Documents\\GITHUB\\Personal\\C_sharp\\C_sharp.csproj": {}
   },
   "projects": {
-    "c:\\Users\\rrajasagi\\Documents\\GITHUB\\Personal\\C_sharp\\C_sharp.csproj": {
+    "C:\\Users\\rrajasagi\\Documents\\GITHUB\\Personal\\C_sharp\\C_sharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\rrajasagi\\Documents\\GITHUB\\Personal\\C_sharp\\C_sharp.csproj",
+        "projectUniqueName": "C:\\Users\\rrajasagi\\Documents\\GITHUB\\Personal\\C_sharp\\C_sharp.csproj",
         "projectName": "C_sharp",
-        "projectPath": "c:\\Users\\rrajasagi\\Documents\\GITHUB\\Personal\\C_sharp\\C_sharp.csproj",
+        "projectPath": "C:\\Users\\rrajasagi\\Documents\\GITHUB\\Personal\\C_sharp\\C_sharp.csproj",
         "packagesPath": "C:\\Users\\rrajasagi\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\rrajasagi\\Documents\\GITHUB\\Personal\\C_sharp\\obj\\",
+        "outputPath": "C:\\Users\\rrajasagi\\Documents\\GITHUB\\Personal\\C_sharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rrajasagi\\AppData\\Roaming\\NuGet\\NuGet.Config",
