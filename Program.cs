@@ -16,6 +16,7 @@ using getset;
 using cvs;
 using inter;
 using abs_class;
+using del_gate;
 
 /// <summary>
 /// this is the main code run area
@@ -71,6 +72,7 @@ namespace MainCode
             //ds.diff_ds cl_inst_ds = new diff_ds();
             //cl_inst_ds.m1_arrays_static();
             //cl_inst_ds.m2_arrays_dynamic();
+            //cl_inst_ds.m2_1_arraylist();
             //cl_inst_ds.m3_list();
             //cl_inst_ds.m4_list_cls_objs();
 
@@ -155,13 +157,41 @@ namespace MainCode
             //jeep.jeep_runs();
 
             //Lesson 11 Abstract Classes
-            abs_class.cycle c = new cycle();
-            c.cycle_tyres();
-            abs_class.train_station tn = new train_station();
-            tn.cycle_tyres();
-            tn.trains();
+            //abs_class.cycle c = new cycle();
+            //c.cycle_tyres();
+            //abs_class.train_station tn = new train_station();
+            //tn.cycle_tyres();
+            //tn.trains();
 
-            
+            //Lesson 12 Delegates.
+            del_gate.dels d = new dels(); //class instance
+            dels.del1_1input del_d1 = new dels.del1_1input(d.car_names); // delegate intance
+            del_d1("Benz");
+            //multicast delegates
+            /*
+            dels.del1_1input del_d2,del_d3,del_d4;
+            del_d2=new dels.del1_1input(d.car_2nd_choice);
+            del_d3=new dels.del1_1input(d.car_3rd_choice);
+            del_d4=new dels.del1_1input(d.car_no_choice);  
+
+            del_d2("BMW"); //+ del_d3("Audi") +  del_d4("GEO");
+
+            */          
+            dels.del_sample d2,d3, d4,d5;
+            d2= new dels.del_sample(d.car_2nd_choice);  
+            d3= new dels.del_sample(d.car_3rd_choice);  
+            d4= new dels.del_sample(d.car_no_choice);          
+            d5=d2+d3+d4;
+            d5();
+
+
+
+
+
+
+
+
+
 
 
 
