@@ -18,6 +18,7 @@ using inter;
 using abs_class;
 using del_gate;
 using exc_hand;
+using enumz;
 
 /// <summary>
 /// this is the main code run area
@@ -35,6 +36,8 @@ namespace MainCode
         // (string[] args) -> this is parameter declaration
         // unless you call other methods into Main method they will not be executed. a program starts and ends in Main method only.
         {
+            #region RoughPage 
+            // regions are used to compartment a code. it has no effect on the code but for ease of use. 
             // Rough page:
             /*
              Console.WriteLine("Enter Name:");
@@ -42,18 +45,21 @@ namespace MainCode
             string Name=Console.ReadLine();
             Console.WriteLine("Name:"+Name);
             */
-
+            #endregion
+            #region l1
             //Lesson 1: simple input and output from console.
             //DIfferent_IOs.IO_Test Cl_inst_IO_Test = new IO_Test(); //Creating a class instance to access the methods and variables 
             //with in the class and the new instace "Cl_inst_IO_Test" is called an object.
             //the IO_Test() is a default constructor; 
             //Cl_inst_IO_Test.SimpleIO(); //calling a method;
             //Cl_inst_IO_Test.Diff_WLs(); //fi a method has static in the decleration we dot neet instance like "Cl_inst_IO_Test" we can directly call "IO_Test.Diff_WLs();"
-
+            #endregion
+            #region l2
             // Lesson 2: data types 1. Boolean
             //datatypes.dtype diff_dtype = new dtype();
             //diff_dtype.m1();
-
+            #endregion
+            #region l3
             //Lesson 3: operators
             //diff_operators.many_operators oprs=new many_operators();
             //oprs.ABC_method(); 
@@ -61,14 +67,16 @@ namespace MainCode
             //diff_operators.animal_check.CheckAnimalType(animal1); // animal_check.CheckAnimalType(animal2); animal_check.CheckAnimalType(animal3);
             //nulling.nullby();
             //conversion.convert();
-
+            #endregion
+            #region l4
             //Lesson 4: Getter Setter
             //getset.gs gs_et = new gs();
             //int i = gs_et.charging(10);
             //Console.WriteLine($"new charge is {i}");
             //getset.gs2 gs_et2 = new gs2();
             //gs_et2.buy_eggs();
-
+            #endregion
+            #region l5
             //Lesson 5: Data Structures.
             //ds.diff_ds cl_inst_ds = new diff_ds();
             //cl_inst_ds.m1_arrays_static();
@@ -76,7 +84,8 @@ namespace MainCode
             //cl_inst_ds.m2_1_arraylist();
             //cl_inst_ds.m3_list();
             //cl_inst_ds.m4_list_cls_objs();
-
+            #endregion
+            #region l6
             //Lesson 6: Loops.
             //loopsandconi.diff_loops cl_inst_loops = new diff_loops();
             //cl_inst_loops.m_if_loop();
@@ -86,7 +95,8 @@ namespace MainCode
             //cl_inst_loops.switch_condi();
             //cl_inst_loops.m_dowhile_loop();
             //cl_inst_loops.m_try_catch();
-
+            #endregion
+            #region l7
             //Lesson 7: Methods and Functions            
             //diff_methods.method_types inst_method = new method_types(); // this class has constructors
             //diff_methods.method_types inst_method2 = new method_types("parameters"); // this class has constructors that takes parameters.
@@ -114,7 +124,8 @@ namespace MainCode
             //Console.WriteLine(l);
             //inst_method.print_this();
             //inst_method.m12_add(5,3);
-
+            #endregion
+            #region l8
             //Lesson 8 oops concepts
             //oops_concepts.encap new_encap = new encap();
             //new_encap.i=2;
@@ -138,7 +149,8 @@ namespace MainCode
             //Console.WriteLine($"with 2 varibales one method is called for sum of {pv} and with 3 variables it is {pv2}");
             //oops_concepts.poly_Circle PC = new oops_concepts.poly_Circle();
             //PC.Draw();
-
+            #endregion
+            #region l9
             //Lesson 9 class_v_struct            
             //var personClass = new PersonClass("Alice", 30); // instance of the class
             //var personStruct = new PersonStruct("Bob", 25); // instance of the struct
@@ -150,18 +162,21 @@ namespace MainCode
             //personStruct.Name = "Bob Smith"; // Modifying name property
             //personStruct.PrintDetails(); // Outputs: Name: Bob Smith, Age: 25
             //personStructCopy.PrintDetails(); // Outputs: Name: Bob, Age: 25 (original remains unchanged)
-
+            #endregion
+            #region l10
             //Lesson 10 interfaces
             //inter.Jeep jeep = new inter.Jeep();
             //jeep.jeep_runs();
-
+            #endregion
+            #region l11
             //Lesson 11 Abstract Classes
             //abs_class.cycle c = new cycle();
             //c.cycle_tyres();
             //abs_class.train_station tn = new train_station();
             //tn.cycle_tyres();
             //tn.trains();
-
+            #endregion
+            #region l12
             //Lesson 12 Delegates.
             // del_gate.dels d = new dels(); //class instance
             // dels.del1_1input del_d1 = new dels.del1_1input(d.car_names); // delegate intance
@@ -173,17 +188,18 @@ namespace MainCode
             // d4= new dels.del_sample(d.car_no_choice);          
             // d5=d2+d3+d4;
             // d5();
-
+            #endregion
+            #region l13
             // Lesson 13: Exception handling
             //exc_hand.ex_handle eh = new exc_hand.ex_handle();
             //eh.reading();
             //eh.writing();
-
+            #endregion
+            #region l14
             // Lesson 14: Enums
-            
-
-
-
+            enumz.enu en = new enu();
+            en.color();
+            #endregion
         }
     }
 }
