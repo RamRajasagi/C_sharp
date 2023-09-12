@@ -154,11 +154,11 @@ namespace MainCode
             //Lesson 9 class_v_struct            
             //var personClass = new PersonClass("Alice", 30); // instance of the class
             //var personStruct = new PersonStruct("Bob", 25); // instance of the struct
-            //var personClassCopy = personClass; // this Copys by reference of the class above
+            //var personClassCopy = personClass; // this Copy by reference of the class above
             //personClass.Name = "Alice Johnson"; // Modifying  name property
             //personClass.PrintDetails(); // Outputs: Name: Alice Johnson, Age: 30
             //personClassCopy.PrintDetails(); // Outputs: Name: Alice Johnson, Age: 30 (same as original)
-            //var personStructCopy = personStruct; // this Copys by value of the struct above
+            //var personStructCopy = personStruct; // this Copy by value of the struct above
             //personStruct.Name = "Bob Smith"; // Modifying name property
             //personStruct.PrintDetails(); // Outputs: Name: Bob Smith, Age: 25
             //personStructCopy.PrintDetails(); // Outputs: Name: Bob, Age: 25 (original remains unchanged)
@@ -200,6 +200,7 @@ namespace MainCode
             enumz.enu en = new enu();
             en.color();
             #endregion
+            
         }
     }
 }

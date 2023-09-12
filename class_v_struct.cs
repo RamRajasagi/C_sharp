@@ -8,10 +8,10 @@ namespace cvs;
 // Define a class
 public class PersonClass
 {
-    public string Name { get; set; } // declaring name proerties
+    public string Name { get; set; } // declaring name properties
     public int Age { get; set; }
 
-    public PersonClass(string name, int age) // creating class contructor
+    public PersonClass(string name, int age) // creating class contractor
     {
         Name = name;
         Age = age;
@@ -24,7 +24,7 @@ public class PersonClass
 }
 
 // Define a struct
-// structs cant have destructors, cant have defined constructors without paramets, cant inherit from classes but can inherit from onterfaces. 
+// structs cant have destructors, cant have defined constructors without parameters, cant inherit from classes but can inherit from interfaces. 
 public struct PersonStruct
 {
     public string Name { get; set; }
