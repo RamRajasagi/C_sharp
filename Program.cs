@@ -19,6 +19,7 @@ using abs_class;
 using del_gate;
 using exc_hand;
 using enumz;
+using genrick;
 
 /// <summary>
 /// this is the main code run area
@@ -197,10 +198,18 @@ namespace MainCode
             #endregion
             #region l14
             // Lesson 14: Enums
-            enumz.enu en = new enu();
-            en.color();
+            // enumz.enu en = new enu();
+            // en.color();
             #endregion
-            
+
+            #region l15
+             // Create an instance of MyGenericClass with int as the type argument
+            MyGenericClass<int> intGenericClass = new MyGenericClass<int>(10);
+            intGenericClass.PrintGenericValue(); 
+            // Create an instance of MyGenericClass with string as the type argument
+            MyGenericClass<string> stringGenericClass = new MyGenericClass<string>("Hello, Generics!");
+            stringGenericClass.PrintGenericValue(); // Output: The value stored in the generic member is: Hello, Generics!
+            #endregion
         }
     }
 }

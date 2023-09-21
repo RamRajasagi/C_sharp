@@ -18,3 +18,7 @@ main: program.cs
 12. delegates.cs
 13.except_handle.cs
 14.enum.cs
+15.Generics.cs
+
+concepts not covered:
+1. reflection
