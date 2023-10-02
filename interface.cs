@@ -1,5 +1,5 @@
-// interface is like a contract given to a class saying that these when inherited should be implemetd. 
-//interfaces can only have decleration but no implementaions and it cant have feild like int i or float, etc
+// interface is like a contract given to a class saying that these when inherited should be implement. 
+//interfaces can only have declaration but no implementations and it cant have field like int i or float, etc
 //all the members are public by default and can be changes
 // class and struct can inherit interfaces
 
@@ -19,10 +19,10 @@ class Jeep : Ivechile, Ifuel {
     private string fuel;
 
     public string Fuel{get {return fuel;} set{fuel = value;}}
-    //Fuel="dsl"; // this wont work coz class cannot constant declaretion
+    //Fuel="dsl"; // this wont work coz class cannot constant declaration
           
-    public void jeep_runs() { // this is how youy call an interface method using public void
-    // and if you run into a use case when there is jeep_runs in 2nd inheried inerface then we explicitly specify saying interface2.jeep_runs, whicih is called explict interface implementation
+    public void jeep_runs() { // this is how you call an interface method using public void
+    // and if you run into a use case when there is jeep_runs in 2nd inhered interface then we explicitly specify saying interface2.jeep_runs, which is called explicit interface implementation
         int tyres = 4;
         Fuel="Dsl";
         Console.WriteLine("Jeep has {0} tyres and runs on {1} as fuel" , tyres,Fuel);
