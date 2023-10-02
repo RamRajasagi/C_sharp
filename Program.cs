@@ -198,8 +198,9 @@ namespace MainCode
             #endregion
             #region l14
             // Lesson 14: Enums
-            // enumz.enu en = new enu();
-            // en.color();
+            enumz.enu en = new enu();
+            //en.color();
+            en.prt_color();
             #endregion
 
             #region l15
