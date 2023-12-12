@@ -2,3 +2,6 @@ C_sharp.csproj
 obj/
 bin/
 .vscode/
+obj\
+bin\
+.vscode\
