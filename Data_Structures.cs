@@ -1,9 +1,50 @@
 using System;
 using System.Collections;
 
+<<<<<<< Updated upstream
 //collections: arrays (static, dynamic) , arraylist, hash tables, Queue, Stacks
 //collections.generic: dictionary,List
 //collection.concurrent:(thread safe)  concurrentDictoary, concurrentqueue, concurrentstack, concurrentbag, blockingCollection
+=======
+/*
+Arrays: A fixed-size collection of elements of the same type.
+Example: int[] numbers = {1, 2, 3, 4, 5};
+
+Lists: A dynamic array that can grow or shrink in size.
+Example: List<int> list = new List<int> {1, 2, 3, 4, 5};
+
+Stacks:Follows the Last In, First Out (LIFO) principle.
+Example: Stack<int> stack = new Stack<int>();
+
+Queues: Follows the First In, First Out (FIFO) principle.
+Example: Queue<int> queue = new Queue<int>();
+
+LinkedList: A collection of nodes where each node contains data and a reference to the next node.
+Example: LinkedList<int> linkedList = new LinkedList<int>();
+
+Dictionary (Dictionary<TKey, TValue>): A collection of key-value pairs.
+Example: Dictionary<string, int> dictionary = new Dictionary<string, int>();
+
+HashSet:A collection of unique elements.
+Example: HashSet<int> hashSet = new HashSet<int>();
+
+SortedSet: A collection of unique, sorted elements.
+Example: SortedSet<int> sortedSet = new SortedSet<int>();
+
+Queue<T> (System.Collections.Generic): A generic implementation of a queue.
+Example: Queue<int> genericQueue = new Queue<int>();
+
+Stack<T> (System.Collections.Generic): A generic implementation of a stack.
+Example: Stack<int> genericStack = new Stack<int>();
+
+Tuple (System): Represents a lightweight, immutable data structure containing multiple elements.
+Example: Tuple<int, string> myTuple = Tuple.Create(1, "Hello");
+
+KeyValuePair (System.Collections.Generic): Represents a key-value pair.
+Example: KeyValuePair<int, string> kvp = new KeyValuePair<int, string>(1, "Hello");
+*/
+
+>>>>>>> Stashed changes
 namespace ds
 {
     class diff_ds
@@ -203,6 +244,42 @@ namespace ds
 
         }
 
+        public void m5_stacks()
+        {
+            var myStack = new Stack<int>();
+
+            // Pushing elements onto the stack
+            myStack.Push(10);
+            myStack.Push(20);
+            myStack.Push(30);
+
+            // Peeking at the top element without removing it
+            int topElement = myStack.Peek();
+            Console.WriteLine($"Top element: {topElement}");
+
+            // Popping elements from the stack
+            int poppedElement1 = myStack.Pop();
+            Console.WriteLine($"Popped element: {poppedElement1}");
+
+            int poppedElement2 = myStack.Pop();
+            Console.WriteLine($"Popped element: {poppedElement2}");
+
+            // Checking if the stack is empty
+            bool isEmpty = myStack.Count == 0;
+            Console.WriteLine($"Is the stack empty? {isEmpty}");
+
+            // Pushing more elements onto the stack
+            myStack.Push(40);
+            myStack.Push(50);
+
+            // Iterating through the stack
+            Console.WriteLine("Stack elements:");
+            foreach (int element in myStack)
+            {
+                Console.WriteLine(element);
+            }
+        }
+
 
     }
 
@@ -227,7 +304,10 @@ namespace ds
 
         public int S_rank
         { //this is called property. we can use this when the language supports set and get accessers and both are sepcifed in the same properity
+<<<<<<< Updated upstream
         { //this is called property. we can you when the language supports set and get accessers and both are sepcifed in the same properity
+=======
+>>>>>>> Stashed changes
             set
             {
                 stu_rank = value; //here value is a keyword with has the value of S_rank property
