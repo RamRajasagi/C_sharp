@@ -13,6 +13,9 @@ namespace ds
             //int Array[]; declaring array  //Array = new int[20]; allocating memory to array
             int[] studentGrades = new int[10]; // creating an array and aloocating memory to it in the same line.
             // we can also create aan arry of classes like diff_ds[] d= new diff_ds[5], this will hold five instace of this class
+            //var Array[];    //declaring array
+            //Array = new int[20];  // allocating memory to array
+            var studentGrades = new int[10]; // creating an array and aloocating memory to it in the same line.
             studentGrades[1] = 20; //using index to access the the array and saveing our data in it. 
             studentGrades[5] = 50;
             Console.WriteLine(studentGrades[5]); //we use an index too get specific vaule of an array.
@@ -35,6 +38,16 @@ namespace ds
                 stu_name[i] = Console.ReadLine();
 
                 Console.Write("Enter Student rank:");
+
+            var stu_name = new string[stu_count];
+            var stu_grade = new int[stu_count];
+
+            for (int i = 0; i < stu_count; i++)
+            {
+                Console.Write("Enter Student Name:");
+                stu_name[i] = Console.ReadLine();
+
+                Console.Write("Enter Student Grade:");
                 stu_grade[i] = Convert.ToInt32(Console.ReadLine());
             }
 
@@ -42,6 +55,7 @@ namespace ds
             {
                 Console.WriteLine("Student Name is: " + stu_name[i]);
                 Console.WriteLine("Student rank is: " + stu_grade[i]);
+                Console.WriteLine("Student Grade is: " + stu_grade[i]);
             }
 
         }
@@ -81,6 +95,13 @@ namespace ds
             // similler to arrays with index based access but their size can be changed at run time unlike array where size is fixed
             List<string> stu_name = new List<string>(); //creating a list. here no need to declare size as list can grow as you like
             List<int> stu_grade = new List<int>();
+
+            string onemore = "y";
+
+        public void m3_list()
+        {
+            var stu_name = new List<string>(); //creating a list
+            var stu_grade = new List<int>();
 
             string onemore = "y";
 
@@ -139,6 +160,8 @@ namespace ds
             //example of lists handling class objects i.e a set of data rather than one vaule per index.
             List<Student> list_student = new List<Student>(); // creating a list that takes all the variables that are declared in class Student in one index place
             // Student class is declared below
+            string onemore = "y";
+
             string onemore = "y";
 
             while (onemore == "y")
@@ -204,6 +227,7 @@ namespace ds
 
         public int S_rank
         { //this is called property. we can use this when the language supports set and get accessers and both are sepcifed in the same properity
+        { //this is called property. we can you when the language supports set and get accessers and both are sepcifed in the same properity
             set
             {
                 stu_rank = value; //here value is a keyword with has the value of S_rank property
@@ -217,4 +241,8 @@ namespace ds
 
 
     
+
+
+
+    }
 }
