@@ -5,3 +5,6 @@ bin/
 obj\
 bin\
 .vscode\
+obj
+bin
+.vscode
