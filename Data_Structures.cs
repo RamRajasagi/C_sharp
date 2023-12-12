@@ -49,7 +49,7 @@ namespace ds
         public void m1_arrays_static()
         {
             //int Array[]; declaring array  //Array = new int[20]; allocating memory to array
-            int[] studentGrades = new int[10]; // creating an array and allocating memory to it in the same line.
+            //int[] studentGrades = new int[10]; // creating an array and allocating memory to it in the same line.
             // we can also create aan array of classes like diff_ds[] d= new diff_ds[5], this will hold five instance of this class
             //var Array[];    //declaring array
             //Array = new int[20];  // allocating memory to array
@@ -69,6 +69,8 @@ namespace ds
 
             string[] stu_name = new string[stu_count];// we are declaring the size of this array during run time, however once we declare the size it cant be changed and hence lists
             int[] stu_grade = new int[stu_count];
+            //var stu_name = new string[stu_count];
+            //var stu_grade = new int[stu_count];
 
             for (int i = 0; i < stu_count; i++)
             {
@@ -76,9 +78,9 @@ namespace ds
                 stu_name[i] = Console.ReadLine();
 
                 Console.Write("Enter Student rank:");
+            }
 
-            var stu_name = new string[stu_count];
-            var stu_grade = new int[stu_count];
+            
 
             for (int i = 0; i < stu_count; i++)
             {
@@ -130,16 +132,11 @@ namespace ds
 
         public void m3_list()
         {
+            //var stu_name = new List<string>(); //creating a list
+            //var stu_grade = new List<int>();
             // similar to arrays with index based access but their size can be changed at run time unlike array where size is fixed
             List<string> stu_name = new List<string>(); //creating a list. here no need to declare size as list can grow as you like
             List<int> stu_grade = new List<int>();
-
-            string onemore = "y";
-
-        public void m3_list()
-        {
-            var stu_name = new List<string>(); //creating a list
-            var stu_grade = new List<int>();
 
             string onemore = "y";
 
@@ -200,8 +197,6 @@ namespace ds
             // Student class is declared below
             string onemore = "y";
 
-            string onemore = "y";
-
             while (onemore == "y")
             {
                 var obj_student = new Student(); // creating a class instance to access the class variables
@@ -235,7 +230,7 @@ namespace ds
             foreach (Student s in list_student) // here in the place of regular var we used the class name as the data type is the info that we are collecting form the list
             {
                 Console.WriteLine(" Name of the Student is {0} and age is {1} and is from {2} and is a {3} and is {4} in the class. Number of students in the class is {5}",
-                s.Stu_name, s.Stu_age, s.Stu_city, s.get_gender(), s.S_rank, Student.Stu_roll);
+                s.Stu_name, s.Stu_age, s.Stu_city, s.get_gender(), s.S_rank,Student.Stu_roll);
 
             }
 
@@ -300,7 +295,7 @@ namespace ds
         }
 
         public int S_rank
-        { //this is called property. we can use this when the language supports set and get accesses and both are specified in the same property
+         //this is called property. we can use this when the language supports set and get accesses and both are specified in the same property
         { //this is called property. we can you when the language supports set and get accessors and both are specified in the same property
             set
             {
@@ -311,12 +306,5 @@ namespace ds
                 return stu_rank;
             }
         }
-    }
-
-
-    
-
-
-
     }
 }
