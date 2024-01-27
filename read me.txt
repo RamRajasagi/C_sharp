@@ -21,4 +21,4 @@ main: program.cs
 15.Generics.cs
 
 concepts not covered:
-1. reflection
+1. reflections
