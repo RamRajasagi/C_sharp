@@ -65,6 +65,7 @@ namespace MainCode
             //cl_inst_loops.for_loop();
             //cl_inst_loops.m_foreach();
             //cl_inst_loops.switch_condi();
+            //cl_inst_loops.switch_condi2();
             //cl_inst_loops.m_dowhile_loop();
             //cl_inst_loops.m_try_catch();
 

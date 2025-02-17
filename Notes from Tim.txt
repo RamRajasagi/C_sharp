@@ -1,0 +1,4 @@
+1. in MS - VS project is where code live and sln is a bucket that holds the projects.
+there can be multiple projects with in a sln.
+
+
