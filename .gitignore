@@ -10,3 +10,5 @@ bin
 .vscode
 .json
 *.json
+
+.fake

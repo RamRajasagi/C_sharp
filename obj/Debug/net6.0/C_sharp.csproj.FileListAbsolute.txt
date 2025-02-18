@@ -2,9 +2,7 @@ D:\C_sharp\bin\Debug\net6.0\C_sharp.exe
 D:\C_sharp\bin\Debug\net6.0\C_sharp.deps.json
 D:\C_sharp\bin\Debug\net6.0\C_sharp.runtimeconfig.json
 D:\C_sharp\bin\Debug\net6.0\C_sharp.dll
-D:\C_sharp\bin\Debug\net6.0\ref\C_sharp.dll
 D:\C_sharp\bin\Debug\net6.0\C_sharp.pdb
-D:\C_sharp\obj\Debug\net6.0\C_sharp.csproj.AssemblyReference.cache
 D:\C_sharp\obj\Debug\net6.0\C_sharp.GeneratedMSBuildEditorConfig.editorconfig
 D:\C_sharp\obj\Debug\net6.0\C_sharp.AssemblyInfoInputs.cache
 D:\C_sharp\obj\Debug\net6.0\C_sharp.AssemblyInfo.cs
@@ -17,9 +15,7 @@ D:\C_shrap\bin\Debug\net6.0\C_sharp.exe
 D:\C_shrap\bin\Debug\net6.0\C_sharp.deps.json
 D:\C_shrap\bin\Debug\net6.0\C_sharp.runtimeconfig.json
 D:\C_shrap\bin\Debug\net6.0\C_sharp.dll
-D:\C_shrap\bin\Debug\net6.0\ref\C_sharp.dll
 D:\C_shrap\bin\Debug\net6.0\C_sharp.pdb
-D:\C_shrap\obj\Debug\net6.0\C_sharp.csproj.AssemblyReference.cache
 D:\C_shrap\obj\Debug\net6.0\C_sharp.GeneratedMSBuildEditorConfig.editorconfig
 D:\C_shrap\obj\Debug\net6.0\C_sharp.AssemblyInfoInputs.cache
 D:\C_shrap\obj\Debug\net6.0\C_sharp.AssemblyInfo.cs
@@ -28,6 +24,7 @@ D:\C_shrap\obj\Debug\net6.0\C_sharp.dll
 D:\C_shrap\obj\Debug\net6.0\ref\C_sharp.dll
 D:\C_shrap\obj\Debug\net6.0\C_sharp.pdb
 D:\C_shrap\obj\Debug\net6.0\C_sharp.genruntimeconfig.cache
+<<<<<<< Updated upstream
 C:\Users\rrajasagi\Documents\GITHUB\Personal\C_sharp\bin\Debug\net6.0\C_sharp.exe
 C:\Users\rrajasagi\Documents\GITHUB\Personal\C_sharp\bin\Debug\net6.0\C_sharp.deps.json
 C:\Users\rrajasagi\Documents\GITHUB\Personal\C_sharp\bin\Debug\net6.0\C_sharp.runtimeconfig.json
@@ -42,3 +39,7 @@ C:\Users\rrajasagi\Documents\GITHUB\Personal\C_sharp\obj\Debug\net6.0\refint\C_s
 C:\Users\rrajasagi\Documents\GITHUB\Personal\C_sharp\obj\Debug\net6.0\C_sharp.pdb
 C:\Users\rrajasagi\Documents\GITHUB\Personal\C_sharp\obj\Debug\net6.0\C_sharp.genruntimeconfig.cache
 C:\Users\rrajasagi\Documents\GITHUB\Personal\C_sharp\obj\Debug\net6.0\ref\C_sharp.dll
+=======
+D:\C_shrap\obj\Debug\net6.0\refint\C_sharp.dll
+>>>>>>> Stashed changes
+D:\C_sharp\obj\Debug\net6.0\refint\C_sharp.dll

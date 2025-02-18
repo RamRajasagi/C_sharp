@@ -19,6 +19,7 @@ main: program.cs
 13.except_handle.cs
 14.enum.cs
 15.Generics.cs
+16.lambda exps 
 
 concepts not covered:
 1. reflection
