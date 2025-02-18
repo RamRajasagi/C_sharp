@@ -1,3 +1,8 @@
+********************The reasone we have 2 branches is the difference in file paths and run versions amoung other things************
+*************************************   Dont merge the branches     ***************************************************
+********************Just copy .cs files across as needed between PMG-Lappy branch and Ram-Lappy branch************
+
+
 Good C# resources:
 https://www.tutlane.com/tutorial/csharp/csharp-methods-functions-with-examples
 https://www.youtube.com/watch?v=SXmVym6L8dw&list=PLAC325451207E3105&ab_channel=kudvenkat
