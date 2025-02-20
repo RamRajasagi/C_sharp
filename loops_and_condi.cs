@@ -83,10 +83,10 @@ namespace loopsandconi
 
         public void m_dowhile_loop(){ //do while loop evaluates the condition after the loop body is executed, this make the loop to be executed at least once. 
             int count = 0;
-        do {
-            Console.WriteLine("Count: " + count);
-            count++;
-        } while (count < 5);
+            do {
+                Console.WriteLine("Count: " + count);
+                count++;
+            } while (count < 5);
         }
 
         public void for_loop()
@@ -117,7 +117,9 @@ namespace loopsandconi
         }
         public void switch_condi()
         {
-        Start: // this is a label
+        Start: // this is a label. labels are used in conjunction with the goto statement to transfer control to another part of the code.
+        // this is used in some cases where we need to break out of a nested loop.
+        // like from the try catch block below.
             Console.WriteLine("Enter Value between 1 and 4");
             int i = Convert.ToInt32(Console.ReadLine());
             switch (i)
@@ -125,6 +127,8 @@ namespace loopsandconi
                 case 1:
                     Console.WriteLine("You have entered one");
                     break; // until break is there it will execue the code below.
+                    // if we dont have break then it will execute all the code below the case.
+                    // no curly braces are needed in switch statement.
                 case 2:
                     Console.WriteLine("You have entered two");
                     break;
@@ -150,11 +154,39 @@ namespace loopsandconi
                         }
                      
                     }
-                    catch { Console.WriteLine("You dint enter y or n"); }
+                    catch { Console.WriteLine("You dint enter true or false"); }
 
                     break;
             }
 
+        }
+
+        public void switch_condi2()
+        {
+            Console.WriteLine("Enter your name");
+            string name = Console.ReadLine();
+
+            var first = name.ToLower()[0];
+
+            switch (first) //any value can be used in switch statement as long as it is a constant value.
+            // here we are using a char value.
+            // we can also use string, int, bool, enums.
+            {
+                case 'a':
+                    Console.WriteLine("Your name starts with A");
+                    break;
+                case 'b':
+                case 'c':
+                    Console.WriteLine("Your name starts with B or C");
+                    break;
+                case 'd' or 'e': // we can use and or in case statements.               
+                case 'f':
+                    Console.WriteLine("Your name starts with D, E or F");
+                    break;
+                default:
+                    Console.WriteLine("Your name starts with a letter other than A-F");
+                    break;
+            }
         }
 
         public void m_try_catch()
