@@ -13,11 +13,12 @@ namespace DIfferent_IOs{
             string var1="my variable"; // use double qoutes always
             int i=123;
             Console.WriteLine("Hello this is + output style: "+var1);
+            //string literal style
             Console.WriteLine("Hello this is string format operation style: {0}", var1);
             //working with two or more ints.
             Console.WriteLine("Hello this is + output style: "+var1+" and this way we can add 2nd var: "+i);
             Console.WriteLine("Hello this is string format operation style: {0} and this way we can add 2nd var {1}", var1,i);
-            //string interpolation
+            //string interpolation style
             System.Console.WriteLine($"Hello this is string interpolation style: {var1} and this way we can add 2nd var {i}"); // this is the style we want to use. 
         }       
 
